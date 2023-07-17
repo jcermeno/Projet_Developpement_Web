@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Formulaire d'inscription</h2>
+
+<form action="submit_registration.php" method="post">
+  <div class="container">
+    <label for="username"><b>Nom d'utilisateur</b></label>
+    <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" id="username" required>
+    <span id="username-error" style="color: red;"></span>
+
+    <label for="psw"><b>Mot de passe</b></label>
+    <input type="password" placeholder="Entrer le mot de passe" name="psw" id="psw" required>
+    <span id="psw-error" style="color: red;"></span>
+
+    <label for="psw-repeat"><b>Confirmer le mot de passe</b></label>
+    <input type="password" placeholder="Confirmer le mot de passe" name="psw-repeat" id="psw-repeat" required>
+    <span id="psw-repeat-error" style="color: red;"></span>
+
+    <label for="firstname"><b>Prénom</b></label>
+    <input type="text" placeholder="Entrer le prénom" name="firstname" id="firstname" required>
+    <span id="firstname-error" style="color: red;"></span>
+
+    <label for="lastname"><b>Nom</b></label>
+    <input type="text" placeholder="Entrer le nom" name="lastname" id="lastname" required>
+    <span id="lastname-error" style="color: red;"></span>
+
+    <button type="submit">S'inscrire</button>
+    <button type="button" onclick="location.href='login.html';">Se connecter</button>
+  </div>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="validate_form.js"></script>
+
+</body>
+</html>
