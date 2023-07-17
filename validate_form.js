@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#firstname, #lastname, #username').on('input', function() {
+  $('#fName, #lName , #userName ').on('input', function() {
     var input = $(this);
     var id = input.attr('id');
     $.ajax({
