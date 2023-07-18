@@ -1,10 +1,10 @@
 <?php
 include 'database_connection.php';
 
-$username = $_POST['username'];
-$password = $_POST['psw'];
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
+$userName  = $_POST['userName '];
+$password = $_POST['password'];
+$fName  = $_POST['fName '];
+$lName  = $_POST['lName '];
 
 if (strlen($username) >= 8 && $password === $_POST['psw-repeat'] && preg_match("/^[a-zA-Z].*$/", $firstname) && preg_match("/^[a-zA-Z].*$/", $lastname)) {
   $result = $conn->query("SELECT * FROM users WHERE username='$username'");
